@@ -9,18 +9,24 @@ Aqui vai a descrição do componente.
 
 <ArgsTable of={Button} />
 
-## Button example
+## Button Primary
 
 <Canvas>
-	<Story name="Button Example" args={{ children: "Texto do botão" }}>
+	<Story
+		name="Button Primary"
+		args={{ children: "Texto do botão", variant: "primary" }}
+	>
 		{(args) => <Button {...args} />}
 	</Story>
 </Canvas>
 
-## Button example 2
+## Button Accent
 
 <Canvas>
-	<Story name="Button Example 2" args={{ children: "Texto do botão 2" }}>
+	<Story
+		name="Button Accent"
+		args={{ children: "Texto do botão 2", variant: "accent" }}
+	>
 		{(args) => <Button {...args} />}
 	</Story>
 </Canvas>
