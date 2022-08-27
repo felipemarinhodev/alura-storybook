@@ -1,5 +1,5 @@
 import Button from "../src/components/Button";
-import ThemeProvider from "../src/components/theme/ThemeProvider";
+import ThemeProvider from "../src/theme/ThemeProvider";
 
 export default function HomeScreen() {
 	return (
