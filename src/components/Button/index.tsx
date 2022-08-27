@@ -1,5 +1,21 @@
 // import * as S from "./styles";
 
-export default function Button({ children }) {
-	return <button>{children}</button>;
+import React from "react";
+
+interface ButtonProps {
+	disabled?: boolean;
+	onClick?: React.MouseEventHandler<HTMLButtonElement>;
+	children: React.ReactNode;
+}
+
+export default function Button({
+	children,
+	disabled = false,
+	...props
+}: ButtonProps) {
+	return (
+		<button {...props} disabled={disabled}>
+			{children}
+		</button>
+	);
 }
