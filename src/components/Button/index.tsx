@@ -8,8 +8,6 @@ const StyledButton = styled.button<ButtonProps>`
 	transition: 0.3s;
 
 	${({ theme, variant }) => {
-		console.log("theme", theme.colors[variant]);
-
 		return {
 			backgroundColor: theme.colors[variant].main,
 			color: theme.colors[variant].text,
