@@ -1,12 +1,13 @@
-// import * as S from "./styles";
-
 import Button from "../src/components/Button";
+import ThemeProvider from "../src/components/theme/ThemeProvider";
 
 export default function HomeScreen() {
 	return (
-		<div>
-			<h1>Home page!</h1>
-			<Button>Simple Button</Button>
-		</div>
+		<ThemeProvider>
+			<div>
+				<h1>Home page!</h1>
+				<Button variant="primary">Simple Button</Button>
+			</div>
+		</ThemeProvider>
 	);
 }
